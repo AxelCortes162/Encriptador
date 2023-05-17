@@ -15,10 +15,11 @@
 
 </head>
 <body>
-    <header>
+    <header id="inicio">
         <p>
             <img src="imagenes/Vector.png" alt="Logo" class="logo">
         </p>
+        
     </header>
     <main>
         <section class="cuadro-izquierdo">
@@ -33,16 +34,16 @@
 
             <div class="botones">
                 <button class="btn-encriptar" onclick="btnEncriptar()">
-                    Encriptar
-                </button>
+                        Encriptar
+                </button> 
                 <button class="btn-desencriptar" onclick="btnDesencriptar()">
                     Desencriptar
                 </button>
             </div> 
         </section>
         <section class="cuadro-derecho">
-            <output class="mensaje" cols="30" rows="10">
-            </output>
+            <textarea class="mensaje" cols="30" rows="10">
+            </textarea>
             <button id="copiar" class="btn-copiar" onclick="copiar()">
                 Copiar
             </button>   

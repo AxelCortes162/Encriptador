@@ -11,6 +11,7 @@ function btnEncriptar(){
     mensaje.value = textoEncriptado
     textArea.value = "";
     mensaje.style.backgroundImage = "none"
+    document.querySelector(".btn-encriptar") 
     document.getElementById("copiar").style.display = "show"
     document.getElementById("copiar").style.display = "inherit"
 }

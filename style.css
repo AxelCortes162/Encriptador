@@ -312,14 +312,17 @@ footer img{
         font-size: 40px;
     }
     .btn-copiar{
+        position: relative;
         margin-left: 18%;
-        margin-top: 56%;
+        margin-top: 50%;
         width: 60%;
     }
 
     footer{
-        position: relative;
-        top: 400px;
+        position: absolute;
+        top: 1260px;
+        width: 100%;
+        margin: 0 auto;
     }
     
 }
