@@ -1,5 +1,6 @@
 const textArea = document.querySelector(".tex-area")
 const mensaje = document.querySelector(".mensaje")
+const seccionDerecha = document.querySelector(".cuadro-derecho")
 
 //La letra "e" es convertida para "enter"
 //La letra "i" es convertida para "imes"
@@ -10,19 +11,19 @@ function btnEncriptar(){
     const textoEncriptado = encriptar(textArea.value)
     mensaje.value = textoEncriptado
     textArea.value = "";
-    mensaje.style.backgroundImage = "none"
+    seccionDerecha.style.backgroundImage = "none"
     document.querySelector(".btn-encriptar") 
-    document.getElementById("copiar").style.display = "show"
-    document.getElementById("copiar").style.display = "inherit"
+    document.getElementById("copy").style.display = "show"
+    document.getElementById("copy").style.display = "inherit"
 }
 
 function btnDesencriptar(){
     const textoDesencriptado = desencriptar(textArea.value)
     mensaje.value = textoDesencriptado
     textArea.value = ""
-    mensaje.style.backgroundImage = "none"
-    document.getElementById("copiar").style.display = "show"
-    document.getElementById("copiar").style.display = "inherit"
+    seccionDerecha.style.backgroundImage = "none"
+    document.getElementById("copy").style.display = "show"
+    document.getElementById("copy").style.display = "inherit"
 }
 function encriptar(stringEncriptada){
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]]
