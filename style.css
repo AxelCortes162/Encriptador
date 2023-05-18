@@ -284,6 +284,7 @@ body.lightmode{
         top: 20px;
         width: 90px;
         height:35px;
+        background: none;
     }
     main{
         position: static;
@@ -393,6 +394,7 @@ body.lightmode{
     #lmode{
         position: absolute;
         margin-left: 30%;
+        background: none;
     }
     main{
         width: 100%;
