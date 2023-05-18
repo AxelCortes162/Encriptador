@@ -26,13 +26,14 @@ function btnEncriptar(){
 function btnDesencriptar(){
     if(textArea.value.length == 0){
         swal("¡ERROR!","Debes ingresar un texto.", "error")
-    }
+    } else{
     const textoDesencriptado = desencriptar(textArea.value)
     mensaje.value = textoDesencriptado
     textArea.value = ""
     seccionDerecha.style.backgroundImage = "none"
     document.getElementById("copy").style.display = "show"
     document.getElementById("copy").style.display = "inherit"
+    }
 }
 function encriptar(stringEncriptada){
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]]
