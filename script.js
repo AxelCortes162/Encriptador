@@ -2,12 +2,17 @@ const textArea = document.querySelector(".tex-area")
 const mensaje = document.querySelector(".mensaje")
 const seccionDerecha = document.querySelector(".cuadro-derecho")
 
+
 //La letra "e" es convertida para "enter"
 //La letra "i" es convertida para "imes"
 //La letra "a" es convertida para "ai"
 //La letra "o" es convertida para "ober"
 //La letra "u" es convertida para "ufat"
 function btnEncriptar(){
+    var regex = /^[a-z]+$/;
+    if(textArea.value.length == 0){
+        swal("¡ERROR!","Debes ingresar un texto.", "error")
+    } else{
     const textoEncriptado = encriptar(textArea.value)
     mensaje.value = textoEncriptado
     textArea.value = "";
@@ -15,9 +20,13 @@ function btnEncriptar(){
     document.querySelector(".btn-encriptar") 
     document.getElementById("copy").style.display = "show"
     document.getElementById("copy").style.display = "inherit"
+    }
 }
 
 function btnDesencriptar(){
+    if(textArea.value.length == 0){
+        swal("¡ERROR!","Debes ingresar un texto.", "error")
+    }
     const textoDesencriptado = desencriptar(textArea.value)
     mensaje.value = textoDesencriptado
     textArea.value = ""
@@ -35,6 +44,7 @@ function encriptar(stringEncriptada){
         }
     }
     return stringEncriptada
+    
 }
 
 function desencriptar(stringDesencriptada){
@@ -56,3 +66,4 @@ function copiar(){
     document.execCommand("cut") 
     swal("¡Bien!", "Se copió con exito", "success");
 }
+
