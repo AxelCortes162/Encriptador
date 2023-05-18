@@ -6,6 +6,7 @@ body{
     line-height: 48px;
     letter-spacing: 0em;
     text-align: left;
+    width: 100%;
 }
 .logo{
     position: absolute;
