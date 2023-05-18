@@ -151,8 +151,10 @@ text-align: center;
     display: none;
     width: 100%;
 }
+a{
+    text-decoration: none;
+}
 .btn-copiar{
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -376,8 +378,7 @@ footer img{
         margin: 0 auto;
         top: 466%;
         padding: 0;
-        left: 0;
-    
+        left: 0; 
         width: 400px;
     }
 }
