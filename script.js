@@ -2,7 +2,29 @@ const textArea = document.querySelector(".tex-area")
 const mensaje = document.querySelector(".mensaje")
 const seccionDerecha = document.querySelector(".cuadro-derecho")
 
+const lmode = document.querySelector("#lmode");
+const body = document.querySelector("body");
 
+load();
+
+lmode.addEventListener("click", e =>{
+    body.classList.toggle("lightmode");
+    store(body.classList.contains("lightmode"));
+})
+
+function load (){
+    const lightmode = localStorage.getItem("lightmode");
+
+    if(!lightmode){
+        store("false")
+    } else if(lightmode == "true"){
+        body.classList.add("lightmode");
+    }
+}
+
+function store (value){
+    localStorage.setItem("lightmode", value);
+}
 //La letra "e" es convertida para "enter"
 //La letra "i" es convertida para "imes"
 //La letra "a" es convertida para "ai"

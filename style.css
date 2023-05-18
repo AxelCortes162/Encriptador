@@ -9,12 +9,36 @@ body{
     line-height: 48px;
     letter-spacing: 0em;
     text-align: left;
+    transition: 0.4s;
+}
+header{
+    width: 100%;
+    display: flex;
 }
 .logo{
     position: absolute;
     padding-left: 5%;
     padding-top: 2%;
     width: 31px;
+}
+#lmode{
+    position: relative;
+    left:50%;
+    top: 40px;
+    width: 100px;
+    height: 35px;
+    font-style: italic;
+    color: #0A3871;
+    font-weight: 600;
+    background: url(imagenes/846724.jpg);
+    font-size: 15px;
+    border-radius: 10px; 
+    border:none;
+    box-shadow: 2px 2px 35px #022a5a;
+}
+#lmode:hover{
+    background:url(imagenes/cielo.jpg);
+    color: #ecabe9;
 }
 main{
     display: flex;
@@ -35,6 +59,7 @@ main{
 ::placeholder{
     color: #0A3871;
     font-size: 40px;
+    transition: 0.4s;
 }
 .tex-area:focus{
     outline: none;
@@ -69,6 +94,7 @@ main{
     margin-right: 30px ;
     border: 1px solid #0A3871;
     box-shadow: 1px 1px 10px 5px #fefefe;
+    transition: 0.4s;
 }
 .btn-encriptar:hover{
     font-size: 24px;
@@ -86,6 +112,7 @@ main{
     margin-right: 30px ;
     border: 1px solid #0A3871;
     box-shadow: 1px 1px 10px 5px #fefefe;
+    transition: 0.4s;
 }
 .btn-desencriptar:hover{
     font-size: 24px;
@@ -175,6 +202,7 @@ a{
     top: 100px;
     right: 22px;
     position: relative;
+    transition: 0.4s;
 }
 
 footer{
@@ -205,6 +233,39 @@ footer img{
 .github{
     margin-left: 9px;
 }
+
+body.lightmode{
+    background: url(imagenes/cielo.jpg);
+    color: #ecabe9;
+}
+.lightmode #lmode{
+    color: #ecabe9;
+    background: url(imagenes/cielo.jpg);
+}
+.lightmode #lmode:hover{
+    color: #022a5a;
+    background: url(imagenes/846724.jpg);
+}
+.lightmode main section button{
+    background-color: #ecabe9;
+    border-color: #ecabe9;
+}
+
+.lightmode ::placeholder{
+    color: #ecabe9;
+}
+.lightmode .tex-area{
+    color: #ecabe9;
+}
+
+.lightmode .btn-copiar{
+    color: #ffffff;
+    background-color: #ecabe9;
+}
+
+.lightmode footer h2{
+    color: #ecabe9;
+}
 /*Responsivo para celulares*/
 @media  screen and (max-width:480px) {
     body{
@@ -216,6 +277,13 @@ footer img{
         text-align: center;
         margin-bottom: 10px;
         width: 80%;
+    }
+    #lmode{
+        position: absolute;
+        margin-left: 20% ;
+        top: 20px;
+        width: 90px;
+        height:35px;
     }
     main{
         position: static;
@@ -321,6 +389,10 @@ footer img{
         text-align: center;
         margin-bottom: 10px;
         width: 86%;
+    }
+    #lmode{
+        position: absolute;
+        margin-left: 30%;
     }
     main{
         width: 100%;
