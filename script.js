@@ -24,6 +24,8 @@ function btnEncriptar(){
     document.querySelector(".btn-encriptar") 
     document.getElementById("copy").style.display = "show"
     document.getElementById("copy").style.display = "inherit"
+    document.getElementById("resultado").style.display = "show"
+    document.getElementById("resultado").style.display = "inherit"
         }
     }
 }
@@ -44,6 +46,8 @@ function btnDesencriptar(){
     seccionDerecha.style.backgroundImage = "none"
     document.getElementById("copy").style.display = "show"
     document.getElementById("copy").style.display = "inherit"
+    document.getElementById("resultado").style.display = "show"
+    document.getElementById("resultado").style.display = "inherit"
         }
     }
 }

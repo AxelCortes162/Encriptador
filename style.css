@@ -106,7 +106,9 @@ main{
     border-radius: 30px;
     box-shadow: 10px 10px 100px 10px #022a5a;
 }
-
+#resultado{
+    display: none;
+}
 .mensaje{
     font-size: 25px;
     width: 99%;
