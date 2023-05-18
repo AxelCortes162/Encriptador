@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background:url(imagenes/846724.jpg);
     font-family: Inter;
