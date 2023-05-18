@@ -9,10 +9,14 @@ const seccionDerecha = document.querySelector(".cuadro-derecho")
 //La letra "o" es convertida para "ober"
 //La letra "u" es convertida para "ufat"
 function btnEncriptar(){
-    var regex = /^[a-z]+$/;
     if(textArea.value.length == 0){
-        swal("¡ERROR!","Debes ingresar un texto.", "error")
+        swal("Debes ingresar un texto.","", "error")
     } else{
+        if (!/^[a-z\s]+$/g.test(textArea.value)){
+            swal("¡ERROR!", "Lee las indicaciones.", "error")
+        }
+        else{
+            swal("Encriptación correcta", "", "success")
     const textoEncriptado = encriptar(textArea.value)
     mensaje.value = textoEncriptado
     textArea.value = "";
@@ -20,19 +24,27 @@ function btnEncriptar(){
     document.querySelector(".btn-encriptar") 
     document.getElementById("copy").style.display = "show"
     document.getElementById("copy").style.display = "inherit"
+        }
     }
 }
 
 function btnDesencriptar(){
     if(textArea.value.length == 0){
-        swal("¡ERROR!","Debes ingresar un texto.", "error")
+        swal("Debes ingresar un texto.","", "error")
     } else{
+        if (!/^[a-z\s]+$/g.test(textArea.value)){
+            swal("¡ERROR!", "Lee las indicaciones.", "error")
+        }
+        else{
+            swal("Desencriptación correcta", "", "success")
+        
     const textoDesencriptado = desencriptar(textArea.value)
     mensaje.value = textoDesencriptado
     textArea.value = ""
     seccionDerecha.style.backgroundImage = "none"
     document.getElementById("copy").style.display = "show"
     document.getElementById("copy").style.display = "inherit"
+        }
     }
 }
 function encriptar(stringEncriptada){

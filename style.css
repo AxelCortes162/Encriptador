@@ -104,15 +104,6 @@ main{
     box-shadow: 10px 10px 100px 10px #022a5a;
 }
 
-.contenedor.resultado{
-    position: absolute;
-    bottom: 410px;
-    width: 320px;
-    height: 450px;
-    padding: 0;
-    box-sizing: border-box;
-    margin-left: 25px;
-}
 .mensaje{
     font-size: 25px;
     width: 99%;
@@ -148,12 +139,14 @@ text-align: center;
 }*/
 .contenedor-copiar{
     display: flex;
+    
     position: absolute;
     bottom: 400px;
     top: 700px;
-    padding-left: 40px;
+    padding-left: 0px;
     margin: 0 auto;
     display: none;
+    width: 100%;
 }
 .btn-copiar{
     
@@ -161,7 +154,7 @@ text-align: center;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 328px;
+    width: 80%;
     height: 67px;
     box-shadow: 5px 5px 5px #022a5a;
     color: #0A3871;
