@@ -9,7 +9,6 @@ body{
     line-height: 48px;
     letter-spacing: 0em;
     text-align: left;
-    width: 100%;
 }
 .logo{
     position: absolute;
@@ -249,6 +248,8 @@ footer img{
     }    
     .botones{
         display: flex;
+        flex-direction: column;
+        align-items: center;
         flex-wrap: wrap;
         margin: 0 auto;
         
@@ -286,7 +287,8 @@ footer img{
         position: relative;
         top: 0;
         padding: 0;
-        margin:0 auto;
+        margin-left: 12%;
+        margin-right: 12%;
         width: 90%;
         height: 50px;
     }
@@ -372,7 +374,7 @@ footer img{
     .btn-copiar{
         position: relative;
         margin: 0 auto;
-        top: 450%;
+        top: 466%;
         padding: 0;
         left: 0;
     
