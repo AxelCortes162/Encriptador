@@ -396,6 +396,9 @@ body.lightmode{
         margin-left: 30%;
         background: none;
     }
+    #mode:hover{
+        background: none;
+    }
     main{
         width: 100%;
         display: flex;
