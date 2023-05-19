@@ -239,6 +239,9 @@ body.lightmode{
     color: #ecabe9;
 }
 .lightmode #lmode{
+    box-shadow: 2px 2px 35px #ecabe9;
+}
+.lightmode #lmode{
     color: #ecabe9;
     background: url(imagenes/cielo.jpg);
 }
